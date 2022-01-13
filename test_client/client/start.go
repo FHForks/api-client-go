@@ -5,7 +5,6 @@ import (
 	"github.com/firehydrant/api-client-go/client/incidents"
 	"github.com/firehydrant/api-client-go/fhclient"
 	"github.com/firehydrant/api-client-go/models"
-	"os"
 )
 
 func Start() (
@@ -14,8 +13,8 @@ func Start() (
 ) {
 	c := fhclient.NewApiClient(
 		fhclient.Config{
-			ApiHost: os.Getenv("API_HOST"),
-			ApiKey:  os.Getenv("API_KEY"),
+			ApiHost: "gmendez.ngrok.io",
+			ApiKey:  "fhb-fcfc386bb8dea956a82000b47a98367a",
 		},
 	)
 	var name string
@@ -36,9 +35,5 @@ func Start() (
 		)
 		return nil, err
 	}
-	fmt.Println(
-		"incident payload: ",
-		incident.Payload,
-	)
 	return incident.Payload, nil
 }

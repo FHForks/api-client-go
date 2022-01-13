@@ -15,6 +15,6 @@ func main() {
 	}
 	fmt.Println(
 		"payload: ",
-		payload,
+		payload.IncidentURL,
 	)
 }
