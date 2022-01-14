@@ -117,6 +117,9 @@ type IncidentEntity struct {
 	// report id
 	ReportID string `json:"report_id,omitempty"`
 
+	// retro exports
+	RetroExports []string `json:"retro_exports"`
+
 	// role assignments
 	RoleAssignments []*RoleAssignmentEntity `json:"role_assignments"`
 
