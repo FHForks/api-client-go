@@ -14,7 +14,7 @@ func Start() (
 	c := fhclient.NewApiClient(
 		fhclient.Config{
 			ApiHost: "gmendez.ngrok.io",
-			ApiKey:  "fhb-fcfc386bb8dea956a82000b47a98367a",
+			ApiKey:  "<local_bot_token>",
 		},
 	)
 	var name string
